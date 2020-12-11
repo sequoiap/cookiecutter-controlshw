@@ -1,3 +1,4 @@
+import numpy as np
 
 import {{cookiecutter.project_name}}.parameters as P
 import .param8 as P8
