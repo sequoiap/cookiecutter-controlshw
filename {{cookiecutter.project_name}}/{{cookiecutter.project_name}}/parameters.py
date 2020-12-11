@@ -1,5 +1,5 @@
 """
-Ball on Beam Parameter File
+Parameter File
 
 Contains parameters that the various files will reference while running 
 simulations.
