@@ -3,11 +3,14 @@ A cookiecutter template for all the Controls Homework problems by Sequoia Ploeg.
 
 
 # Getting Started
+
 We'll use Anaconda for our Python environments. You can download it [here](). 
 If you know how to use Python environments already, feel free to create your
-own whichever way you want.
+own whichever way you want. If you've done Python development and don't want to
+switch to Anaconda Python (which will override existing Python installations, at
+least in Linux), just create a virtual Python environment some other way.
 
-Within the Anaconda Prompt (to run, search "Anaconda Prompt" in the Windows 
+Within the Anaconda Prompt (to run in Windows, search "Anaconda Prompt" in the 
 start menu), we'll create a new environment using the command:
 
 ```
