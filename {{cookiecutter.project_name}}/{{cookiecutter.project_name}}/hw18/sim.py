@@ -11,7 +11,7 @@ from {{cookiecutter.project_name}}.hw18.controller import Controller
 # Instantiate system, controller, and reference classes
 system = Dynamics(alpha=0.0)
 controller = Controller()
-reference = SignalGenerator(amplitude=0.5, frequency=0.1, y_offset=0.0)
+reference = SignalGenerator(amplitude=0.5, frequency=0.1, offset=0.0)
 disturbance = SignalGenerator(amplitude=0.0, frequency=0.0)
 noise = SignalGenerator(amplitude=0.0)
 

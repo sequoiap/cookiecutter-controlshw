@@ -23,7 +23,7 @@ def run(live_plot=True, monitor=None):
     """
     # Instantiate system, controller, and reference classes
     system = Dynamics()
-    reference = SignalGenerator(amplitude=0.5, frequency=0.1)
+    reference = SignalGenerator(amplitude=0.5, frequency=0.1, offset=0.0)
 
     # Instantiate the simulation plots and animation
     dataplot = DataPlotter()

@@ -12,7 +12,7 @@ from {{cookiecutter.project_name}}.hw13.observer_plotter import ObserverDataPlot
 # Instantiate system, controller, and reference classes
 system = Dynamics(alpha=0.0)
 controller = Controller()
-reference = SignalGenerator(amplitude=0.5, frequency=0.1)
+reference = SignalGenerator(amplitude=0.5, frequency=0.1, offset=0.0)
 disturbance = SignalGenerator(amplitude=0.0, frequency=0.0)
 
 # Instantiate the simulation plots and animation

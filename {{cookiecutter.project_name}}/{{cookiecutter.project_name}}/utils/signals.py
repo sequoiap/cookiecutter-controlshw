@@ -21,10 +21,10 @@ class SignalGenerator:
     >>> plt.plot(t, y)
     >>> plt.show()
     """
-    def __init__(self, amplitude=1.0, frequency=0.001, y_offset=0):
+    def __init__(self, amplitude=1.0, frequency=0.001, offset=0):
         self.amplitude = amplitude
         self.frequency = frequency
-        self.y_offset = y_offset
+        self.y_offset = offset
 
     def square(self, t):
         """
