@@ -4,6 +4,8 @@ A cookiecutter template for all the Controls Homework problems by Sequoia Ploeg.
 
 # Getting Started
 
+For a detailed tutorial, see the [Tutorial](./tutorial/README.md).
+
 We'll use Anaconda for our Python environments. You can download it [here](). 
 If you know how to use Python environments already, feel free to create your
 own whichever way you want. If you've done Python development and don't want to
