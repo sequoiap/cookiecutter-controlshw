@@ -41,6 +41,12 @@ unless you've done it yourself.
 
 Good luck!
 
+---
+
+Next Topic: [About Python](about_python.md)
+
+---
+
 ## Note to Maintainers
 
 This tutorial is comprised of several markdown files contained within the same
