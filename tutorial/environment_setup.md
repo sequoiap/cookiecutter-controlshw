@@ -30,7 +30,7 @@ your machine.
 ## What's Anaconda? (And why Windows is the absolute worst.)
 
 Many operating systems come with Python preinstalled (MacOS and Linux do, but
-not Windows). Some operating systems are therefore easier to set up for
+not Windows). Some operating systems are therefore easier to set up for our
 development. Still, there are many people in the world who use an operating
 system that doesn't come with Python (looking at you, Windows). Unfortunately,
 the default Python version that can be installed on said operating system isn't
@@ -106,8 +106,12 @@ default Python. I'll leave that up to you, though.
     conda activate <the-environment-name-you-chose>
     ```
 
+    ![](images/activate_env.png)
+
     Note you'll have to activate your environment every time you start Anaconda 
-    Prompt in order to access your installed Python packages.
+    Prompt in order to access your installed Python packages. Also note that
+    your current environment is indicated by the parenthesis before the path;
+    `base` is default, and `controls` is the one I created.
 
 1. Create a directory for your homework projects
 
@@ -161,25 +165,53 @@ default Python. I'll leave that up to you, though.
     changes reflected in the installed version; `.` means current directory,
     which is the package to install, if you're terminal is in the right place.
 
-1. Set up the debugger
+1. Set up the interpreter (and debugger)
 
     Now, open up VSCode. VSCode has the nice feature of opening up entire
     folders and displaying the directory in a sidepane for easy access to the
     whole project directory.
 
-    
+    ![](images/vs_code.png)
+
+    In the bottom left of the status bar, there is a "project interpreter"
+    indicator. It shows which interpreter will be used to run and debug your 
+    project, and clicking on it allows you to select a different interpreter.
+
+    ![](images/choose_interpreter.png)
 
     If your newly created environment isn't showing up in VSCode, you can go
     to the terminal and, after activating your environment, running the command
 
+    **Windows**:
+    ```
+    where python
+    ```
+
+    **MacOS and Linux**:
     ```
     which python
     ```
 
     This should yield (on the first line of perhaps a few) the path to your
     environment's python interpreter. You can always copy this path and
-    manually add it to VSCode (when you click on the interpreter button, select
-    "Enter interpreter path...")
+    manually add it to VSCode
+    
+    * Click on the interpreter button
+    * Select "Enter interpreter path..." 
+    * Paste the path you just found. Note I used the \envs\controls one, since
+        that's my newly created environment named "controls".
+
+    ![](images/interpreter_path.png)
+
+    You'll note that the correct Python environment now appears for your
+    project. This setting ought to persist even when you close and reopen
+    VSCode.
+
+    ![](images/correct_interpreter.png)
+
+    See the next image for where to run or debug your files:
+
+    ![](images/debugger_annotated.png)
 
 ---
 
