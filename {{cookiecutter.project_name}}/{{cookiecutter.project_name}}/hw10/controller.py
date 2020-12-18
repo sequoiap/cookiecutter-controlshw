@@ -2,7 +2,6 @@ import numpy as np
 
 import {{cookiecutter.project_name}}.parameters as P
 import .param10 as P10
-from .pidcontrol import PIDControl
 
 
 class Controller:
