@@ -7,7 +7,7 @@ from {{cookiecutter.project_name}}.hw2.animation import Animation
 from {{cookiecutter.project_name}}.hw2.plotter import DataPlotter
 
 
-def run(live_plot=True):
+def run(live_plot=True, monitor=None):
     """
     Runs a simulation of the system. Simulation parameters are defined in 
     ``{{cookiecutter.project_name}}.parameters``. 
@@ -17,6 +17,8 @@ def run(live_plot=True):
     live_plot : bool
         If True, creates a live-updating animation. If False, only shows the
         dataplot results at the end of the full simulation.
+    monitor : {{cookiecutter.project_name}}.Monitor
+        A monitor object for future test implementation.
     """
     # Instantiate all the necessary reference generators (may be more than one).
     reference = SignalGenerator(amplitude=0.5, frequency=0.1, offset=0.0)

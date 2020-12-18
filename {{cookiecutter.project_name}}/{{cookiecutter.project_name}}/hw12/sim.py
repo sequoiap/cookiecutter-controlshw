@@ -9,7 +9,7 @@ from {{cookiecutter.project_name}}.hw3.dynamics import Dynamics
 from {{cookiecutter.project_name}}.hw12.controller import Controller
 
 
-def run(live_plot=True):
+def run(live_plot=True, monitor=None):
     """
     Runs a simulation of the system. Simulation parameters are defined in 
     ``{{cookiecutter.project_name}}.parameters``. 
@@ -19,6 +19,8 @@ def run(live_plot=True):
     live_plot : bool
         If True, creates a live-updating animation. If False, only shows the
         dataplot results at the end of the full simulation.
+    monitor : {{cookiecutter.project_name}}.Monitor
+        A monitor object for future test implementation.
     """
     # Instantiate system, controller, and reference classes
     system = Dynamics(alpha=0.2)
@@ -46,6 +48,8 @@ def run(live_plot=True):
             u = controller.update(r, x)
             y = system.update(u + d)  # Propagate the dynamics
             t = t + P.Ts  # advance time by Ts
+            if monitor:
+                monitor.submit_state(y)
         # update animation and data plots
         animation.update(system.state)
         dataplot.update(t, r, system.state, u)
