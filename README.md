@@ -15,7 +15,7 @@ least in Linux), just create a virtual Python environment some other way.
 Within the Anaconda Prompt (to run in Windows, search "Anaconda Prompt" in the 
 start menu), we'll create a new environment using the command:
 
-```
+<!-- ```
 conda create -n <you-pick-a-reasonable-name> python
 ```
 
@@ -33,18 +33,18 @@ Install the following packages by using these commands in the prompt:
 
 ```
 conda install -c conda-forge cookiecutter
-<!-- conda install -c anaconda make -->
-```
+<!-- conda install -c anaconda make - ->
+``` -->
 
-You can create a new directory based off this cookiecutter by using the command:
+<!-- You can create a new directory based off this cookiecutter by using the command:
 
 ```
 cookiecutter url-to-repo
-```
+``` -->
 
-As your directory is created, respond to the prompts to autofill values 
+<!-- As your directory is created, respond to the prompts to autofill values 
 throughout the project. Suggested project names would be `mass`, `ballbeam`, 
-and `vtol`. (When I say suggested, I really mean you should use those.)
+and `vtol`. (When I say suggested, I really mean you should use those.) -->
 
 # Maintainers
 

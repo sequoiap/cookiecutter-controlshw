@@ -27,9 +27,9 @@ Program command line arguments can be seen by running:
 python {{cookiecutter.project_name}} -h
 ```
 
-## "Packaging" for the novice Python programmer
+<!-- ## "Packaging" for the novice Python programmer -->
 
-This repository is set up as a software package. That means not only is it
+<!-- This repository is set up as a software package. That means not only is it
 a set of scripts, but they behave as a self-aware package. What this means
 for you is that, as long as your files and scripts are within the main
 package directory (in this case, `{{cookiecutter.project_name}}`) and the
@@ -62,9 +62,9 @@ This namespaces everything within `parameters.py` to the variable `P`. The
 values can then be accessed as `P.[attribute]` (e.g., `P.mass`).
 
 WARNING: DO NOT REMOVE THE ``__init__.py`` FILE! Imports won't work otherwise. 
-It's perfectly alright that they are empty files. This is just how Python works.
+It's perfectly alright that they are empty files. This is just how Python works. -->
 
-## Words of caution
+<!-- ## Words of caution
 
 ### Numpy arrays
 
@@ -95,4 +95,4 @@ wrapping arrays in numpy arrays, making the dimensions larger and larger and
 leading to problems down the road. Make sure to keep track of what's an array
 and what's not, and when you multiply by a value and store it in an array,
 even if the value is only a (1,1) numpy array, extract the value so you just
-have an integer before performing operations with it.
+have an integer before performing operations with it. -->
