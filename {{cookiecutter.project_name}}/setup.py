@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-#
-# Copyright © Control Book Project Contributors
-# Licensed under the terms of the MIT License
-# (see {{cookiecutter.project_name}}/__init__.py for details)
 
 """
 Installation (setup.py) for {{cookiecutter.project_name}}
@@ -33,9 +29,6 @@ setup_args = dict(
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
     ],
     python_requires=">=3.6",
 )
@@ -45,7 +38,6 @@ install_requires = [
     "numpy",
     "matplotlib",
     "control",
-    "pytest",
 ]
 
 if "setuptools" in sys.modules:
