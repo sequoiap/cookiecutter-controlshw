@@ -79,6 +79,37 @@ assign something else to it! Because Python won't stop you the way C might,
 it'll just keep chugging along, happy to turn an integer into a Car and try
 adding it to another integer.
 
+## Scripts vs. Interactive Shell
+
+Since Python is interpreted, it can be run as a script or used in "interactive"
+mode in a terminal, similar to MATLAB; MATLAB has scripts as well as the 
+console window. 
+
+Running a Python script is as simple as typing the command
+
+```
+python <filename.py>
+```
+
+This runs the file. Entering the interactive shell is as simple as typing
+
+```
+python
+```
+
+which brings opens the Python interpreter in the terminal. Once in the
+interpreter, you can directly type python code, such as
+
+```
+a = 2
+b = 3
+c = a + b
+print(c)
+```
+
+Once you've installed Python in the next step of the tutorial, try entering
+interactive mode and typing out a few commands.
+
 ## Community
 
 Python has a very large, very dedicated open-source community, especially in
