@@ -110,6 +110,41 @@ print(c)
 Once you've installed Python in the next step of the tutorial, try entering
 interactive mode and typing out a few commands.
 
+## Comments
+
+You may be used to `//` comments in C/C++ or `%` in MATLAB. 
+
+In Python, single line comments are denoted with `#`.
+
+```
+# This line is commented out
+a = 3   # You can also comment out the rest of a line
+
+# You could do multiline comments by adding a bunch of
+# "hashtags" to each line of a paragraph.
+```
+
+Or, multiline comment blocks are denoted with three single- or
+double-quotations.
+
+```
+'''
+This section will be commented out
+entirely.
+
+Even this part!
+'''
+
+"""
+Quotation marks work too!
+
+Cool.
+"""
+```
+
+Note that in most text editors, you can toggle comments for a selection by
+hitting `ctrl + /`. Just highlight all the lines you want to comment out.
+
 ## Community
 
 Python has a very large, very dedicated open-source community, especially in
